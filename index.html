@@ -92,10 +92,6 @@
     		font-size: 24px;
     		font-weight: 500;
     	}
-    	.clear{
-    		grid-column: span 2;
-    		width: 150px;
-    	}
     	.plus{
     		grid-row: span 2;
     		height: 150px;
@@ -115,6 +111,7 @@
             <span class="clear" onclick="calc.txt.value = ''">C</span>
             <span class="num" onclick="document.calc.txt.value +='/'">/</span>
             <span class="num" onclick="document.calc.txt.value +='*'">*</span>
+            <span class="num" onclick="document.calc.txt.value =document.calc.txt.value.substr(0,document.calc.txt.value.length-1)">del</span>
             <span class="num" onclick="document.calc.txt.value +='7'">7</span>
             <span class="num" onclick="document.calc.txt.value +='8'">8</span>
             <span class="num" onclick="document.calc.txt.value +='9'">9</span>
